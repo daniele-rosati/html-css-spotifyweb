@@ -3,45 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify web</title>
+    <title>Spotify Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="img/favicon.ico" class="favicon" href="C:\Users\rosat\Desktop\classe 122\html-css-spotifyweb\spotify\img\favicon.ico">
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- /Google fonts -->
+    <link rel="stylesheet" href="styale.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
-        <button class="btn-head">EFFETTUA L'UPGRADE</button>
-    </header>
-   <div class="container">
-    <div class="sidebar">
-        <div class="logo"> <img src="spotify/img/logo.svg" alt=""> </div>
-        <ul class="icon">
-            <li> <img src="spotify/img/home.svg" alt="home"> home</li>
-            <li> <img src="spotify/img/search.svg" alt="search"> cerca</li>
-            <li> <img src="spotify/img/libreria.svg" alt="librery">la tua libreria</li>
-        </ul>
-    </div>
-    <div class="main-content">
-        <h2>Recently played</h2>
-        <div class="row">
-            <div class="card">
-                <div><img src="spotify/img/metal_lifting.jpg" alt=""> </div>
-                <div>Heavy metal</div> 
+    <div class="container-app">
+        <header>
+            <div class="logo">
+                <img src="spotify/img/logo.svg" alt="">
+            </div>
+            <nav class="main-nav">
+                <ul class="icon">
+                    <li> <img src="spotify/img/home.svg" alt="home">Home</li>
+                    <li><img src="spotify/img/search.svg" alt="search">Cerca</li>
+                    <li><img src="spotify/img/libreria.svg" alt="librery">Libreria</li>
+                </ul>
+            </nav>
+            <div class="playlist-title">
+                <h3>Playlist</h3>
+                <div class="name-btn">
+                    <button class="btn-playlist"> <i class="fa-solid fa-plus"></i></button>
+                    Crea Playlist</div>
+            </div>
+            <ul class="playlist">
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                
+            </ul>
+            <div class="account">
+                <button class="download"><i class="fa-thin fa-circle-down"></i> Scarica App</button>
+                <hr>
+                <div class="user"> <i class="fa-solid fa-circle-user"></i> Jonh Doe</div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container-head">
+                <button class="btn-head">EFFETTUA L'UPGRADE</button>
             </div>
 
-            <div class="card">
-                <div><img src="spotify/img/stranger.jpeg" alt=""> </div>
-                <div>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrak)</div> 
+            <div class="top-bar">
+                
+                    <ul class="list">
+                        <li> IN EVIDENZA </li>
+                        <li> PODCAST </li>
+                        <li> CLASSIFICHE </li>
+                        <li> GENERI E MOOD </li>
+                        <li> NUOVE USCITE</li>
+                        <li> SCOPRI </li>
+                    </ul>
+                
+
             </div>
+
+            <div class="main-content">
+                <h2>Recently played</h2>
+                <div class="row">
+                    <div class="card">
+                        <div><img src="spotify/img/metal_lifting.jpg" alt=""> </div>
+                        <div>Heavy metal</div> 
+                        <div class="under-title">Subtitle</div>
+                    </div>
+
+                    <div class="card">
+                        <div><img src="spotify/img/stranger.jpeg" alt=""> </div>
+                        <div>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrak)</div> 
+                        <div class="under-title">Kyle & Micheal Stein</div>
+                    </div>
+
+                    <div class="card">
+                        <div><img src="spotify/img/aquietplace.jpeg" alt=""> </div>
+                        <div>A quite place</div> 
+                        <div class="under-title">Subtitle</div>
+                    </div>
+
+                    <div class="card">
+                        <div><img src="spotify/img/split.jpeg" alt=""> </div>
+                        <div>Split</div> 
+                        <div class="under-title">Subtitle</div>
+                    </div>
+
+                    <div class="card">
+                        <div><img src="spotify/img/cure.jpeg" alt=""> </div>
+                        <div>A cure for wellness </div> 
+                        <div class="under-title">Subtitle</div>
+                    </div>
+                    <div class="card">
+                        <div><img src="spotify/img/sinister.jpeg" alt=""> </div>
+                        <div>Sinister</div> 
+                        <div class="under-title">Subtitle</div>
+                    </div>
+                </div>
+        </main>
+    </div>
+    <footer>
+        <div class="bar">
+            <div class="bar-inside"></div>
         </div>
-        
-    </div>
-   </div>
-   <footer>
-    <p>© 2024 Spotify. Tutti i diritti riservati.</p>
-   </footer> 
-
+    </footer>
 </body>
 </html>

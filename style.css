@@ -1,23 +1,55 @@
-
-*{
-    margin: 0;
-    padding: 0;
+/*------------------
+    RESET
+-------------------*/
+* {
     box-sizing: border-box;
-}
-
-.favicon{
-    color: white;
-}
-
-body{
-    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
+}
 
+img {
+    max-width: 100%;
+}
+
+/*------------------
+    TYPO
+-------------------*/
+body {
+    font-family: "Montserrat", sans-serif;
 }
 .roboto-thin {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
     font-style: normal;
   }
   
@@ -27,22 +59,10 @@ body{
     font-style: italic;
   }
   
-  .roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
   .roboto-light-italic {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: italic;
-  }
-  
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
   }
   
   .roboto-regular-italic {
@@ -51,22 +71,10 @@ body{
     font-style: italic;
   }
   
-  .roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
   .roboto-medium-italic {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: italic;
-  }
-  
-  .roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
   }
   
   .roboto-bold-italic {
@@ -75,25 +83,136 @@ body{
     font-style: italic;
   }
   
-  .roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
   .roboto-black-italic {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: italic;
   }
   
-  .container{
+
+/*------------------
+    GENERAL
+-------------------*/
+.container-app {
+    height: calc(100vh - 90px);
     display: flex;
-  }
+    background-color: lightpink;
+}
 
-/*--- header button ---*/
+/*------------------
+    HEADER
+-------------------*/
+header {
+    width: 300px;
+    flex-shrink: 0;
+    background-color:#080b12eb;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: white;
+}
 
-  header{
+.logo {
+    text-align: center;
+    background-color:#000;
+    color: white;
+}
+.logo img {
+    max-height: 50px;
+}
+
+li{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    width: 30px;
+}
+
+li{
+    padding: 5px;
+}
+
+.main-nav {
+    background-color:#000;
+    color: white;
+    padding: 15px;
+}
+
+.playlist-title {
+    color: white;
+    background-color: #000;
+    padding: 10px;
+}
+.name-btn{
+    color: #6f6f6f;
+    padding: 10px;
+}
+
+.btn-playlist{
+    padding: 5px;
+    background-color:#6f6f6f;
+    font-size: 30px;
+
+}
+h3{
+    padding: 10px;
+}
+
+.playlist {
+    background-color: #000;
+    flex-grow: 1;
+    overflow-y: auto;
+    color: white;
+    padding-left: 10px;
+
+}
+
+a{
+    text-decoration: none;
+    color:#6f6f6f;
+}
+
+.account {
+    background-color: #000;
+    margin-top: auto;
+    padding: 20px;
+}
+
+.download{
+    padding: 10px;
+    background-color: #000;
+    border: none;
+    border-radius: 30px;
+    color: #6f6f6f;
+}
+
+hr{
+    width: 100%;
+    margin: 5px;
+}
+
+.user{
+    color: white;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+i{
+    padding-right: 5px
+}
+
+/*------------------
+    MAIN
+-------------------*/
+main {
+    background-color: #141922;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.container-head{
     background-color: #080b12eb;
     color: white;
     padding: 20px;
@@ -113,57 +232,24 @@ body{
     border-radius: 30px;
     
   }
-  
-  .bottone:hover {
-    background-color: white;
-    color: #000;
-    border: none;
+
+  .top-bar{
+    background-color: #141922;
+    color: white;
+    padding: 20px;
+    text-align: end;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   
+  .list{
+    display: flex;
+    column-gap: 20px;
+    color: #6f6f6f;
+  }
 
-/* --- sidebar --- */
-
-.sidebar{
-    background-color: #000;
-    color: white;
-    min-height: 100vh;
-    padding: 20px;
-    width: 200px;
-    max-width: 100%;
-}
-
-.icon{
-    width: 30%;
-    
-}
-
-.logo{
-    width: 100%;
-}
-
-ul{
-    list-style-type: none;
-}
-
-.sidebar ul{
-    cursor: pointer;
-    padding: 0;
-}
-
-.sidebar ul li{
-    cursor: pointer;
-    padding: 10px 0;
-}
-
-.sidebar ul li:hover{
-    background-color: #555;
-}
-
-/* --- sidebar --- */
-
-/* --- main content --- */
-
-.main-content{
+  .main-content{
     background-color: #141922;
     padding: 20px ;
     width: calc(100% - 200px);
@@ -184,4 +270,61 @@ ul{
     flex-direction: column;
     padding: 0 10px;
     text-align: center;
+    width: 100%;
 }
+
+.under-title{
+    color: #6f6f6f;
+    padding-top:5px ;
+}
+
+
+
+
+/*------------------
+    FOOTER
+-------------------*/
+footer {
+    height: 90px;
+    background-color:#282828;
+    display: flex;
+    align-items: center;
+}
+
+.bar {
+    height: 6px;
+    background: grey ;
+    width:50%;
+}
+.bar-inside {
+    height: 100%;
+    width: 50%;
+    background: lightgray;
+}
+
+/*------------------
+    RESPONSIVE
+-------------------*/
+@media screen and (max-width: 1100px) {}
+@media screen and (max-width: 700px) {}
+
+@media screen and (max-width: 600px) {
+    header {
+        width: 70px;
+    }
+
+    .playlist-title, .playlist {
+        display: none;
+    }
+}
+
+
+
+
+/* */
+
+
+
+
+
+
